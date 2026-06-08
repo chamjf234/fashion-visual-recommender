@@ -1,0 +1,12 @@
+# Archivos generados por entrenamiento — demasiado pesados para GitHub (límite 100MB)
+# Se regeneran al volver a ejecutar las celdas correspondientes del notebook
+features_list.pkl
+image_features.ann
+image_features_dot.ann
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# Dataset de imágenes (~178k archivos) — demasiado pesado y lento para versionar en Git.
+# Se documenta en CLAUDE.md cómo obtenerlo; permanece solo en disco local.
+fashion-dataset/
