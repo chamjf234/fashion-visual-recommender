@@ -106,7 +106,7 @@ Este repositorio **no incluye** los siguientes archivos/carpetas (ver
 
 | Archivo/carpeta | Tamaño aprox. | Por qué no se sube |
 |---|---|---|
-| `fashion-dataset/` | ~44,000 imágenes (varios GB) | Dataset público de terceros; demasiado pesado y son demasiados archivos para versionar en Git. Se descarga aparte desde Kaggle. |
+| `fashion-dataset/` | ~44,000 imágenes (~30 GB) | Dataset público de terceros; demasiado pesado y son demasiados archivos para versionar en Git. Se descarga aparte desde Kaggle. |
 | `features_list.pkl` | ~217 MB | Supera el límite de 100MB por archivo de GitHub. Es un **artefacto generado**: se recrea corriendo la sección de vectorización del notebook sobre el dataset. |
 | `image_features.ann` | ~227 MB | Mismo caso: índice Annoy generado a partir de `features_list.pkl`. Se reconstruye en minutos con el notebook. |
 | `image_features_dot.ann` | ~227 MB | Igual que el anterior, con métrica `dot`. |
