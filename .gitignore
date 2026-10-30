@@ -10,3 +10,6 @@ image_features_dot.ann
 # Dataset de imágenes (~178k archivos) — demasiado pesado y lento para versionar en Git.
 # Se documenta en CLAUDE.md cómo obtenerlo; permanece solo en disco local.
 fashion-dataset/
+
+# Instrucciones locales del asistente
+CLAUDE.md
