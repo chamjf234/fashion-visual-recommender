@@ -6,6 +6,10 @@ recomendación **item-to-item**: dada una imagen de una prenda, el sistema
 recomienda otras prendas visualmente similares, sin necesidad de metadata
 como categoría, precio o marca.
 
+**English summary.** A university computer-vision project: given a garment image, it recommends
+visually similar items. Each of ~44,000 images becomes a 1,280-dimension EfficientNetB1 embedding,
+and neighbors are retrieved with exact KNN (baseline) and approximate search with Annoy.
+
 ## Idea general
 
 Los sistemas de recomendación clásicos (item-to-item) suelen comparar
@@ -89,10 +93,9 @@ calidad de ambos enfoques.
 ## Estructura de archivos
 
 ```
-vision-recomendacion/
+fashion-visual-recommender/
 ├── recomendacion_final.ipynb   # Notebook principal: pipeline completo
 ├── recomendacion.ipynb         # Versión exploratoria/previa
-├── Untitled.ipynb               # Notas y pruebas sueltas
 ├── fashion-dataset/             # Dataset (no versionado, ver abajo)
 ├── features_list.pkl            # Vectores de características (no versionado)
 ├── image_features.ann           # Índice Annoy, métrica euclidiana (no versionado)
@@ -129,8 +132,8 @@ notebook con el dataset descargado.
 
 ## Estado y próximos pasos
 
-Proyecto migrado al portafolio para mostrar el enfoque y los resultados.
-Ideas para evolucionarlo:
+Proyecto académico terminado. No incluye métricas cuantitativas de calidad
+de las recomendaciones. Ideas para evolucionarlo:
 
 - Empaquetar el pipeline en funciones/scripts reutilizables (fuera del
   notebook).
